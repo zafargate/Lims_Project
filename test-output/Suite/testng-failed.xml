@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.tyss.genricUtility.Listener.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="5" parallel="classes" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="org.domain.lims_project.Clients.Clients_Add_Client">
+        <methods>
+          <include name="initiallizeUtility"/>
+          <include name="clients_Add_Client"/>
+          <include name="LogoutApp"/>
+          <include name="loginApp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- org.domain.lims_project.Clients.Clients_Add_Client -->
+      <class name="org.domain.lims_project.Clients.Client_EditClients">
+        <methods>
+          <include name="initiallizeUtility"/>
+          <include name="LogoutApp"/>
+          <include name="loginApp"/>
+          <include name="clientEditClient"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- org.domain.lims_project.Clients.Client_EditClients -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

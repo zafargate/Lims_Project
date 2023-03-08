@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Failed suite [Failed suite [Suite]]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="classes" name="methods3(failed)(failed)">
+    <groups>
+      <run>
+        <include name="sanity"/>
+        <include name="regration"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="importantTestCase.Client_EditClients">
+        <methods>
+          <include name="initiallizeUtility"/>
+          <include name="LogoutApp"/>
+          <include name="loginApp"/>
+          <include name="clientEditClient"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- importantTestCase.Client_EditClients -->
+    </classes>
+  </test> <!-- methods3(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Suite]] -->
