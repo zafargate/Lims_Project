@@ -6,7 +6,8 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 /**
  * This Annotation is used assign(),author(),catagry() with default regrassion
- * @author khanz
+ * @author kishore
+ * mallarapu
  *
  */
 @Target(ElementType.METHOD)
