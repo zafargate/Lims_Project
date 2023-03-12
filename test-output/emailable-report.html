@@ -9,49 +9,23 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">0</td><td class="num">12,114</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">14,505</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="2">org.domain.lims_project.Clients.Client_EditClients</td><td><a href="#m0">LogoutApp</a></td><td rowspan="1">1678252574746</td><td rowspan="1">5</td></tr><tr class="failedeven"><td><a href="#m1">loginApp</a></td><td rowspan="1">1678252573689</td><td rowspan="1">998</td></tr><tr class="failedodd"><td rowspan="2">org.domain.lims_project.Clients.Clients_Add_Client</td><td><a href="#m2">LogoutApp</a></td><td rowspan="1">1678252574746</td><td rowspan="1">6</td></tr><tr class="failedodd"><td><a href="#m3">loginApp</a></td><td rowspan="1">1678252573689</td><td rowspan="1">998</td></tr><tr><th colspan="4">Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">org.domain.lims_project.Clients.Client_EditClients</td><td><a href="#m4">clientEditClient</a></td><td rowspan="1">1678252574707</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">org.domain.lims_project.Clients.Clients_Add_Client</td><td><a href="#m5">clients_Add_Client</a></td><td rowspan="1">1678252574707</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="2">org.domain.lims_project.Clients.Clients_Add_Client</td><td><a href="#m0">clients_Add_Client</a></td><td rowspan="2">1678682439371</td><td rowspan="2">2673</td></tr><tr class="retriedeven"><td><a href="#m1">clients_Add_Client</a></td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">org.domain.lims_project.Clients.Client_EditClients#LogoutApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;com.tyss.genricUtility.ObjectRepository.LimsHomePagaeCommonEle.clickOnLogoutBtn()&quot; because &quot;this.homePage&quot; is null
-	at com.tyss.genricUtility.ConfigerClass.MainClass.LogoutApp(MainClass.java:97)
+<h2>Test</h2><h3 id="m0">org.domain.lims_project.Clients.Clients_Add_Client#clients_Add_Client</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;com.tyss.genricUtility.Miscl.VerificationUtility.tableVerifationData(java.util.List, String)&quot; because &quot;verificationUtility&quot; is null
+	at com.tyss.genricUtility.ObjectRepository.AddClientsPage.verifyAddClients(AddClientsPage.java:71)
+	at org.domain.lims_project.Clients.Clients_Add_Client.clients_Add_Client(Clients_Add_Client.java:40)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:831)
-... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">org.domain.lims_project.Clients.Client_EditClients#loginApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.info(String)&quot; because &quot;test&quot; is null
-	at com.tyss.genricUtility.ExtentsRerportUtility.Reportutility.info(Reportutility.java:124)
-	at com.tyss.genricUtility.ConfigerClass.MainClass.loginApp(MainClass.java:85)
+... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">org.domain.lims_project.Clients.Clients_Add_Client#clients_Add_Client</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;com.tyss.genricUtility.Miscl.VerificationUtility.tableVerifationData(java.util.List, String)&quot; because &quot;verificationUtility&quot; is null
+	at com.tyss.genricUtility.ObjectRepository.AddClientsPage.verifyAddClients(AddClientsPage.java:71)
+	at org.domain.lims_project.Clients.Clients_Add_Client.clients_Add_Client(Clients_Add_Client.java:40)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:831)
-... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">org.domain.lims_project.Clients.Clients_Add_Client#LogoutApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;com.tyss.genricUtility.ObjectRepository.LimsHomePagaeCommonEle.clickOnLogoutBtn()&quot; because &quot;this.homePage&quot; is null
-	at com.tyss.genricUtility.ConfigerClass.MainClass.LogoutApp(MainClass.java:97)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:831)
-... Removed 17 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">org.domain.lims_project.Clients.Clients_Add_Client#loginApp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.info(String)&quot; because &quot;test&quot; is null
-	at com.tyss.genricUtility.ExtentsRerportUtility.Reportutility.info(Reportutility.java:124)
-	at com.tyss.genricUtility.ConfigerClass.MainClass.loginApp(MainClass.java:85)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:831)
-... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">org.domain.lims_project.Clients.Client_EditClients#clientEditClient</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.info(String)&quot; because &quot;test&quot; is null
-	at com.tyss.genricUtility.ExtentsRerportUtility.Reportutility.info(Reportutility.java:124)
-	at com.tyss.genricUtility.ConfigerClass.MainClass.loginApp(MainClass.java:85)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:831)
-... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">org.domain.lims_project.Clients.Clients_Add_Client#clients_Add_Client</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;com.aventstack.extentreports.ExtentTest.info(String)&quot; because &quot;test&quot; is null
-	at com.tyss.genricUtility.ExtentsRerportUtility.Reportutility.info(Reportutility.java:124)
-	at com.tyss.genricUtility.ConfigerClass.MainClass.loginApp(MainClass.java:85)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:831)
-... Removed 16 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 12 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

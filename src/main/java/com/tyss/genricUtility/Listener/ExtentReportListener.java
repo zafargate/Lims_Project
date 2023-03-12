@@ -1,4 +1,6 @@
 package com.tyss.genricUtility.Listener;
+import org.testng.ISuite;
+import org.testng.ISuiteListener;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -14,7 +16,9 @@ import com.tyss.genricUtility.Miscl.UtilityInstanceTransf;
  * @author khanz
  *
  */
-public class ExtentReportListener implements ITestListener {
+public class ExtentReportListener implements ITestListener,ISuiteListener {
+	
+
 	protected Reportutility report;
 	public static Reportutility sReport;
 	PropertyUtility propertyUtility = null; 
@@ -26,9 +30,15 @@ public class ExtentReportListener implements ITestListener {
 	@Override
 	public void onStart(ITestContext context) {
 		System.out.println("onStart--> Test");
+		
+		
+	}
+	
+	@Override
+	public void onStart(ISuite suite) {
 		report = new Reportutility();
 		sReport = report;
-		
+		 
 	}
 	
 	/**

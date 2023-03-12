@@ -82,7 +82,7 @@ public class MainClass extends MainClasssDeclration {
 		LimsLoginPage loginPage = new LimsLoginPage(driver);
 		commonPage = new CommonPage(driver);
 		loginPage.loginAction(username, password);
-		report.info(UtilityInstanceTransf.getExtentTest(), " Login Application Successfully");
+		
 		Assert.assertEquals(driver.getTitle(), "Home", "Home Page is Open Successfully");
 		homePage = new LimsHomePagaeCommonEle(driver);
 

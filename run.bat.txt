@@ -1,0 +1,1 @@
+cd D:\Test Yantra Softwere\Eclips Workspace\Seleninum Workspace\SDET Workspace\Automation\LIMS_Project mvn clean install

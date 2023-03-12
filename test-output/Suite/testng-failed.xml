@@ -16,15 +16,6 @@
           <include name="tearDown"/>
         </methods>
       </class> <!-- org.domain.lims_project.Clients.Clients_Add_Client -->
-      <class name="org.domain.lims_project.Clients.Client_EditClients">
-        <methods>
-          <include name="initiallizeUtility"/>
-          <include name="LogoutApp"/>
-          <include name="loginApp"/>
-          <include name="clientEditClient"/>
-          <include name="tearDown"/>
-        </methods>
-      </class> <!-- org.domain.lims_project.Clients.Client_EditClients -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
