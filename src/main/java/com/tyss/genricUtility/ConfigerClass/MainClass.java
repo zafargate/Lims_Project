@@ -81,8 +81,7 @@ public class MainClass extends MainClasssDeclration {
 		System.out.println("Login Application");
 		LimsLoginPage loginPage = new LimsLoginPage(driver);
 		commonPage = new CommonPage(driver);
-		loginPage.loginAction(username, password);
-		
+		loginPage.loginAction(username, password);	
 		Assert.assertEquals(driver.getTitle(), "Home", "Home Page is Open Successfully");
 		homePage = new LimsHomePagaeCommonEle(driver);
 
@@ -95,7 +94,6 @@ public class MainClass extends MainClasssDeclration {
 	public void LogoutApp() {
 		System.out.println("Logout AppLication");
 		homePage.clickOnLogoutBtn();
-		report.info(UtilityInstanceTransf.getExtentTest(), "Logout Application Successfully");
 		Assert.assertEquals(driver.getTitle(), "Login Page", "logout is  Successfully");
 	}
 
@@ -106,8 +104,7 @@ public class MainClass extends MainClasssDeclration {
 	public void tearDown() {
 		System.out.println("Close Browser");
 		seleniumUtility.closeBrowser();
-		report.info(UtilityInstanceTransf.getExtentTest(),
-				propUtiles.getPropertyData(PropertyKey.BROWSER) + " is close");
+		 
 	}
 
 }
