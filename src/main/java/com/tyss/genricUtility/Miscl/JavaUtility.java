@@ -62,23 +62,23 @@ public class JavaUtility {
 		return  s.split(strategy);
 	}
 	
-	/**
-	 * 
-	 * @param s
-	 * @return
-	 */
-	public String decode(String s) {
-		return new String(Base64.getDecoder().decode(s.getBytes()));
-	}
-	
-	/**
-	 * 
-	 * @param s
-	 * @return
-	 */
-	public String encode(String s) {
-		return new String(Base64.getEncoder().encode(s.getBytes()));
-	}
+//	/**
+//	 * 
+//	 * @param s
+//	 * @return
+//	 */
+//	public String decode(String s) {
+//		return new String(Base64.getDecoder().decode(s.getBytes()));
+//	}
+//	
+//	/**
+//	 * 
+//	 * @param s
+//	 * @return
+//	 */
+//	public String encode(String s) {
+//		return new String(Base64.getEncoder().encode(s.getBytes()));
+//	}
 
 	/**
 	 * 
