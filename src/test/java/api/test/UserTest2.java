@@ -10,11 +10,13 @@ import com.github.javafaker.Faker;
 import com.tyss.genricUtility.AnnotationClass.Report;
 
 import api.endpoint.UserEndPoint;
+import api.endpoint.UserEndPoint2;
 import api.payload.User;
 import io.restassured.response.Response;
 
-public class UserTest {
-
+public class UserTest2 
+{
+	
 	Faker faker;
 	User userPayload;
 
@@ -45,7 +47,7 @@ public class UserTest {
 	@Test(priority = 1)
 	public void testPostUser() {
 		logger.info("********** Creating user ********");
-		Response response = UserEndPoint.createUser(userPayload);
+		Response response = UserEndPoint2.createUser(userPayload);
 		response.then().log().all();
 		Assert.assertEquals(response.getStatusCode(), 200);
 		logger.info("********** User Info Is Display ********");
@@ -57,7 +59,7 @@ public class UserTest {
 		logger.info("********** Getting user ********");
 
 		System.out.println("2-->" + this.userPayload.getUsername());
-		Response response = UserEndPoint.readUsers(this.userPayload.getUsername());
+		Response response = UserEndPoint2.readUsers(this.userPayload.getUsername());
 		response.then().log().all();
 		Assert.assertEquals(response.getStatusCode(), 200);
 
@@ -71,7 +73,7 @@ public class UserTest {
 		logger.info("********** Updating User ********");
 
 		System.out.println("3-->" + this.userPayload.getUsername());
-		Response response = UserEndPoint.updateParameter(this.userPayload.getUsername(), userPayload);
+		Response response = UserEndPoint2.updateParameter(this.userPayload.getUsername(), userPayload);
 		response.then().log().all().statusCode(200);
 
 		Assert.assertEquals(response.getStatusCode(), 200);
@@ -87,10 +89,11 @@ public class UserTest {
 		logger.info("********** Deleting User ********");
 
 		System.out.println("4-->" + this.userPayload.getUsername());
-		Response response = UserEndPoint.deleteUser(this.userPayload.getUsername());
+		Response response = UserEndPoint2.deleteUser(this.userPayload.getUsername());
 		Assert.assertEquals(response.getStatusCode(), 200);
 
 		logger.info("********** User is Deleted ********");
 	}
+
 
 }
