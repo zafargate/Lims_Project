@@ -1,0 +1,5 @@
+# Created at 2023-04-10T16:13:00.868
+Boot Manifest-JAR contains absolute paths in classpath 'D:\Test Yantra Softwere\Eclips Workspace\Seleninum Workspace\SDET Workspace\Automation\RestAssuredProjectFrameWork\target\test-classes'
+Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
+'other' has different root
+
