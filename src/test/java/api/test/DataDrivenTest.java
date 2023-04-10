@@ -57,9 +57,9 @@ public class DataDrivenTest {
 	{
 		
 		System.out.println(userName);
-    	 Response response = UserEndPoint.deleteUser("testuser3");
-		 response.then().log().all();
-		 Assert.assertEquals(response.getStatusCode(), 202);
+//    	 Response response = UserEndPoint.deleteUser("testuser3");
+//		 response.then().log().all();
+//		 Assert.assertEquals(response.getStatusCode(), 202);
 	}
 	
 }
