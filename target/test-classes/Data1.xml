@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ShopperRequest>
+	<city>Bihar</city>
+	<country>India</country>
+	<email>er.@gamil.com</email>
+	<firstName>zafar</firstName>
+	<gender>MALE</gender>
+	<lastName>alam</lastName>
+	<password>zafar123</password>
+	<phone>70533978</phone>
+	<state>Bihar</state>
+	<zoneId>123456</zoneId>
+</ShopperRequest>
