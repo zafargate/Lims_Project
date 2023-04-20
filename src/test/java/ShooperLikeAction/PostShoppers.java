@@ -1,17 +1,16 @@
 package ShooperLikeAction;
 
+import static io.restassured.RestAssured.baseURI;
+import static io.restassured.RestAssured.given;
+
 import java.io.File;
 
-import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
 
 import io.restassured.http.ContentType;
-import io.restassured.response.Response;
 
-import static io.restassured.RestAssured.*;
+public class PostShoppers {
 
-public class Get 
-{
 	
 	@Test
 	void postShoppers() {
@@ -28,22 +27,4 @@ public class Get
 		 .then().assertThat().statusCode(201).log().all();
 	 
 	}
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-
-	
-	 
-	
-
-
 }
-
